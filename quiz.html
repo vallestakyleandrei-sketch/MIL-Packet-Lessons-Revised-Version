@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIL Lesson Packets | Quiz</title>
+  <link rel="icon" type="image/png" href="information.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="quiz.html"><img src="logo.gif" alt="12-ICT-GROUP4 Performance Task"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="packets.html">Learning Packets</a></li>
+        <li><a class="active" href="quiz.html" aria-current="page">Quiz Time!</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">TEST YOURSELF</p>
+        <h1>MIL Quizzes</h1>
+        <p>One 5-question quiz for each learning packet. Pick an answer for every question, then press Check answers.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container quiz-wrap">
+        <div class="quiz-nav">
+          <a href="#quiz-1">Quiz 1</a>
+          <a href="#quiz-2">Quiz 2</a>
+          <a href="#quiz-3">Quiz 3</a>
+          <a href="#quiz-4">Quiz 4</a>
+          <a href="#quiz-5">Quiz 5</a>
+          <a href="packets.html">← Back to packets</a>
+        </div>
+        <div id="quizzes"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 12 - ICT Web Design By Group 4 | HTML and CSS</p>
+      <p>Media and Information Literacy</p>
+    </div>
+  </footer>
+
+  <script>
+    const quizzes = [
+      {
+        title: "Quiz 1: Introduction to Media and Information Literacy",
+        questions: [
+          ["Which shows the correct order of the communication model?",
+            ["Message → Sender → Receiver → Channel", "Sender → Message → Channel → Receiver", "Receiver → Channel → Message → Sender", "Channel → Sender → Receiver → Message"], 1],
+          ["What are raw facts called?",
+            ["Wisdom", "Knowledge", "Data", "Information"], 2],
+          ["Which literacy involves using a projector and laptop correctly?",
+            ["Technology literacy", "Media literacy", "Information literacy", "Literacy in writing"], 0],
+          ["What is the role of feedback in communication?",
+            ["It encodes the message", "It tells the sender how the message was received", "It chooses the channel", "It replaces the message"], 1],
+          ["Understanding gained from information is called…",
+            ["Data", "Wisdom", "Feedback", "Knowledge"], 3]
+        ]
+      },
+      {
+        title: "Quiz 2: Evolution of Media",
+        questions: [
+          ["Cave paintings and papyrus belong to which age?",
+            ["Electronic Age", "Pre-Industrial Age", "Industrial Age", "New / Information Age"], 1],
+          ["The printing press is associated with which age?",
+            ["Industrial Age", "Pre-Indujjjjjjjjjjjstrial Age", "Electronic Age", "New / Information Age"], 0],
+          ["Transistor radios and early computers are associated with which age?",
+            ["Pre-Industrial Age", "Industrial Age", "New / Information Age", "Electronic Age"], 3],
+          ["Social networks and wearable technology are associated with which age?",
+            ["New / Information Age", "Electronic Age", "Industrial Age", "Pre-Industrial Age"], 0],
+          ["Which early network does the lesson mention in connection with the internet?",
+            ["WWW Radio", "ARPANET", "Telegraph Net", "PapyrusNet"], 1]
+        ]
+      },
+      {
+        title: "Quiz 3: Information Literacy",
+        questions: [
+          ["Information literacy is the ability to…",
+            ["Only memorize facts", "Recognize when information is needed, then locate, evaluate, organize, use, and communicate it", "Avoid using the internet", "Copy information from one source"], 1],
+          ["Critical thinking means…",
+            ["Accepting claims automatically", "Questioning, analyzing, and evaluating instead of automatically accepting claims", "Only agreeing with experts", "Ignoring opinions"], 1],
+          ["Which stage involves checking facts and recognizing logical fallacies?",
+            ["Locating / searching information", "Organizing, storing, or archiving", "Analyzing and evaluating quality", "Determining sources"], 2],
+          ["Saving a file to cloud storage belongs to which stage?",
+            ["Organizing, storing, or archiving", "Identifying information needs", "Using information and knowledge", "Determining sources"], 0],
+          ["Which is the last of the seven stages?",
+            ["Using information and knowledge", "Organizing, storing, or archiving", "Locating / searching information", "Creating and communicating new knowledge"], 3]
+        ]
+      },
+      {
+        title: "Quiz 4: Media and Information Sources (RAVAT)",
+        questions: [
+          ["Which RAVAT criterion asks whether a source has established expertise?",
+            ["Value", "Authority", "Accuracy", "Timeliness"], 1],
+          ["“It must be true because everyone believes it.” Which fallacy is this?",
+            ["Ad hominem", "Appeal to authority", "Bandwagon", "Accuracy"], 2],
+          ["Attacking a person instead of their argument is called…",
+            ["Ad hominem", "Bandwagon", "Appeal to authority", "Testimonial"], 0],
+          ["Which are the three types of evidence in the lesson?",
+            ["Fact, opinion, news", "Object, documentary, testimonial", "Reliable, accurate, valuable", "Technical, symbolic, written"], 1],
+          ["Which criterion asks if the information is current enough for the topic?",
+            ["Reliability", "Authority", "Value", "Timeliness"], 3]
+        ]
+      },
+      {
+        title: "Quiz 5: Media Languages, Codes, Conventions, and Messages",
+        questions: [
+          ["Camera shots, lighting, and sound are examples of…",
+            ["Technical codes", "Symbolic codes", "Written codes", "Conventions"], 0],
+          ["Meaning that depends on how an audience interprets symbols and visual signs is a…",
+            ["Technical code", "Written code", "Symbolic code", "Narrative"], 2],
+          ["Dialogue, typography, and text in frame are examples of…",
+            ["Technical codes", "Written codes", "Symbolic codes", "Stakeholders"], 1],
+          ["What is a narrative?",
+            ["A type of camera shot", "A story or plot told through a sequence of events", "The audience of a media product", "A kind of font"], 1],
+          ["Which of these is a producer of media in the lesson?",
+            ["Audience", "Stakeholder", "Journalist", "Receiver"], 2]
+        ]
+      }
+    ];
+
+    const root = document.getElementById("quizzes");
+
+    quizzes.forEach((quiz, qi) => {
+      const section = document.createElement("article");
+      section.className = "quiz";
+      section.id = "quiz-" + (qi + 1);
+
+      let html = "<h2>" + quiz.title + "</h2>";
+      quiz.questions.forEach((q, i) => {
+        html += '<div class="question"><p>' + (i + 1) + ". " + q[0] + "</p>";
+        q[1].forEach((choice, c) => {
+          html += '<label><input type="radio" name="q' + qi + "-" + i + '" value="' + c + '"> ' + choice + "</label>";
+        });
+        html += "</div>";
+      });
+      html += '<div class="quiz-actions"><button type="button" class="check button">Check answers</button>' +
+              '<button type="button" class="reset button button-outline">Try again</button><span class="score" aria-live="polite"></span></div>';
+      section.innerHTML = html;
+      root.appendChild(section);
+
+      section.querySelector(".check").addEventListener("click", () => {
+        const unanswered = quiz.questions.filter((q, i) => !section.querySelector('input[name="q' + qi + "-" + i + '"]:checked')).length;
+        if (unanswered > 0) {
+          section.querySelector(".score").textContent = "Please answer all questions first (" + unanswered + " left).";
+          return;
+        }
+        let score = 0;
+        quiz.questions.forEach((q, i) => {
+          const labels = section.querySelectorAll('input[name="q' + qi + "-" + i + '"]');
+          labels.forEach((input, c) => {
+            const label = input.parentElement;
+            label.classList.remove("correct", "wrong");
+            if (c === q[2]) label.classList.add("correct");
+            else if (input.checked) label.classList.add("wrong");
+            if (input.checked && c === q[2]) score++;
+          });
+        });
+        section.querySelector(".score").textContent = "Score: " + score + " / " + quiz.questions.length;
+      });
+
+      section.querySelector(".reset").addEventListener("click", () => {
+        section.querySelectorAll("input").forEach(i => (i.checked = false));
+        section.querySelectorAll("label").forEach(l => l.classList.remove("correct", "wrong"));
+        section.querySelector(".score").textContent = "";
+      });
+    });
+  </script>
+</body>
+</html>
